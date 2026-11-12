@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#090c0a">
+    <title>Open your workspace · FeeFlow</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/app.css">
+    <link rel="icon" type="image/svg+xml" href="assets/feeflow-mark.svg">
+</head>
+<body>
+     <main class="auth-page">
+        <section class="auth-visual" aria-labelledby="welcome-title">
+            <a class="brand" href="index.html"><img class="brand-symbol" src="assets/feeflow-mark.svg" alt="">FeeFlow</a>
+            <div class="auth-visual-content">
+               <p class="eyebrow">FEES, IN FLOW</p>
+               <h1 id="welcome-title">Welcome back.</h1>
+               <p class="auth-visual-text">Your fee dates, payments and reminders are ready in one calm workspace.</p>
+            </div>
+            <div class="auth-visual-footer">
+              <span>This preview keeps your workspace in this browser.</span>
+           </div>
+        
+
+
+
+
+            
+        </section>
+
+        <section class="auth-panel" aria-labelledby="login-title">
+            <div class="auth-card">
+                <div class="auth-heading">
+                    <p class="eyebrow">YOUR FEEFLOW SPACE</p>
+                    <h2 id="login-title">Continue where you left off.</h2>
+                    <p data-login-copy>Your preview workspace is saved on this device.</p>
+                </div>
+
+                <div class="resume-workspace-card" data-login-workspace hidden>
+                    <span class="resume-workspace-avatar" data-login-avatar aria-hidden="true">F</span>
+                    <span class="resume-workspace-copy"><small>WORKSPACE ON THIS DEVICE</small><strong data-login-name>My workspace</strong><span data-login-role>Fee tracker</span></span>
+                    <span class="resume-workspace-arrow" aria-hidden="true">↗</span>
+                </div>
+
+                <div class="resume-empty-card" data-login-empty hidden>
+                    <span class="resume-empty-symbol" aria-hidden="true">✳</span>
+                    <strong>No workspace here yet</strong>
+                    <span>Create your FeeFlow preview first. It will stay saved in this browser.</span>
+                </div>
+
+                <a class="button button-primary auth-submit" href="dashboard.html" data-login-open hidden>Open my workspace <span aria-hidden="true">→</span></a>
+                <a class="button button-primary auth-submit" href="signup.html" data-login-create hidden>Create a workspace <span aria-hidden="true">→</span></a>
+                <p class="auth-switch"><a href="index.html" class="text-link">Back to FeeFlow</a></p>
+            </div>
+        </section>
+     </main>
+     <script src="js/storage.js" defer></script>
+     <script src="js/app.js" defer></script>
+</body>
+</html>

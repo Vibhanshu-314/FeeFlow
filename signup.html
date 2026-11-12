@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#090c0a">
+    <title>Set up FeeFlow</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/app.css">
+    <link rel="icon" type="image/svg+xml" href="assets/feeflow-mark.svg">
+</head>
+<body>
+    <main class="auth-page">
+        <section class="auth-visual" aria-labelledby="setup-welcome">
+            <a class="brand" href="index.html"><img class="brand-symbol" src="assets/feeflow-mark.svg" alt="">FeeFlow</a>
+            <div class="auth-visual-content">
+                <p class="eyebrow">FEES, IN FLOW</p>
+                <h1 id="setup-welcome">A clearer fee day starts here.</h1>
+                <p class="auth-visual-text">Know who joined, what came in, and what still needs a gentle reminder.</p>
+            </div>
+            <div class="auth-visual-footer"><span>Your workspace stays on this device in this preview.</span></div>
+        </section>
+
+        <section class="auth-panel" aria-labelledby="signup-title">
+            <div class="auth-card">
+                <div class="auth-heading">
+                    <p class="eyebrow">QUICK SETUP</p>
+                    <h2 id="signup-title">What do you do?</h2>
+                    <p>We’ll arrange your fee tracker around your work.</p>
+                </div>
+
+                <form class="auth-form setup-form" id="signup-form">
+                    <fieldset class="role-fieldset">
+                        <legend class="visually-hidden">Choose your account type</legend>
+                        <div class="role-options">
+                            <label class="role-option">
+                                <input type="radio" name="account-role" value="tutor" required>
+                                <span class="role-option-card"><span class="role-option-icon" aria-hidden="true">✎</span><span><strong>Tuition teacher</strong><small>Students &amp; class fees</small></span></span>
+                            </label>
+                            <label class="role-option">
+                                <input type="radio" name="account-role" value="gym" required>
+                                <span class="role-option-card"><span class="role-option-icon role-icon-mint" aria-hidden="true">↗</span><span><strong>Gym owner</strong><small>Members &amp; subscriptions</small></span></span>
+                            </label>
+                            <label class="role-option role-option-student">
+                                <input type="radio" name="account-role" value="student" required>
+                                <span class="role-option-card"><span class="role-option-icon role-icon-peach" aria-hidden="true">◎</span><span><strong>Student / member</strong><small>Track your own fee dates</small></span></span>
+                            </label>
+                        </div>
+                    </fieldset>
+
+                    <div class="form-field">
+                        <label for="signup-name">Your name</label>
+                        <input class="form-input" id="signup-name" type="text" placeholder="Full name" autocomplete="name" required>
+                    </div>
+
+                    <div class="form-field">
+                        <label for="signup-organization"><span data-workspace-label>Tuition or coaching name</span></label>
+                        <input class="form-input" id="signup-organization" type="text" placeholder="Your workspace name" autocomplete="organization" required>
+                    </div>
+
+                    <div class="form-field">
+                        <label for="signup-phone"><span data-phone-label>Your WhatsApp number</span></label>
+                        <input class="form-input" id="signup-phone" type="tel" inputmode="tel" placeholder="+91 98765 43210" autocomplete="tel" required>
+                        <span class="field-hint">Include the country code so fee reminders reach the right number.</span>
+                    </div>
+
+                    <p class="form-feedback" id="signup-feedback" role="status" aria-live="polite" hidden></p>
+                    <button class="button button-primary auth-submit" type="submit">Build my fee tracker <span aria-hidden="true">→</span></button>
+                    <p class="local-data-note"><span aria-hidden="true">▣</span> Preview data is saved in this browser only. No password is stored.</p>
+                    <p class="auth-switch">Already set up here? <a href="login.html" class="text-link">Continue to your workspace</a></p>
+                </form>
+            </div>
+        </section>
+    </main>
+    <script src="js/storage.js" defer></script>
+    <script src="js/app.js" defer></script>
+</body>
+</html>
